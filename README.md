@@ -11,11 +11,13 @@ Para ejecutar las pruebas en este proyecto, sigue los pasos a continuación:
 -npm install
 -npx playwright test
  
- 
- 
- # Pruebas de UI y API en Playwright
+ ## Configurar la Variable de Entorno NODE_ENV
+ set NODE_ENV=QA   # Cambia a entorno QA
+ set NODE_ENV=PROD # Cambia a entorno PROD
 
-En este proyecto, he creado pruebas de usuario (UI) y pruebas de API utilizando Playwright para automatizar las pruebas en nuestra aplicación web. A continuación, describo los casos de prueba que he creado y las justificaciones detrás de ellos:
+
+## Ejecución en GitHub Actions
+Este proyecto está configurado para ejecutar automáticamente todas las pruebas en GitHub Actions cada vez que se realiza un merge de código en la rama principal. No es necesario configurar nada adicional en GitHub Actions, ya que la configuración ya se encuentra en el archivo de flujo de trabajo (workflow) proporcionado.
 
 ## Casos de Prueba de UI
 
@@ -32,7 +34,7 @@ En este proyecto, he creado pruebas de usuario (UI) y pruebas de API utilizando 
 ### Caso de Prueba 3: Login + Chat Interaction
 
 - **Justificación:** Para asegurarnos de que el chat funcione correctamente después de iniciar sesión. Esto es fundamental para una experiencia de usuario fluida.
-- **Mejoras Posibles:** Podemos realizar más interacciones en el chat, como enviar mensajes adicionales o verificar la visibilidad de los mensajes enviados.
+- **Mejoras Posibles:** Podemos realizar más interacciones en el chat, como enviar mensajes adicionales .
 
 ## Casos de Prueba de API
 
@@ -52,7 +54,3 @@ En este proyecto, he creado pruebas de usuario (UI) y pruebas de API utilizando 
 - **Mejoras Posibles:** Podemos verificar si la respuesta contiene detalles sobre la falta de servicio y, si es aplicable, proporciona una respuesta amigable.
 
 En resumen, estos casos de prueba abordan una variedad de escenarios críticos en nuestra aplicación, tanto en la interfaz de usuario como en la capa de API. Las mejoras sugeridas se centran en verificar más detalles y proporcionar información más detallada en las respuestas, lo que puede ser útil para depurar problemas en el futuro. Además, consideramos agregar casos de prueba para escenarios de borde o excepcionales según las necesidades de nuestro proyecto.
-
-run all the cases from allure npx playwright test --reporter=line,experimental-allure-playwright
-generate -> npx allure generate ./allure-results
-open->  npx allure open ./allure-report   

@@ -8,12 +8,12 @@
 
 Para ejecutar las pruebas en este proyecto, sigue los pasos a continuación:
 
--npm install
--npx playwright test
+- npm install
+- npx playwright test
  
  ## Configurar la Variable de Entorno NODE_ENV
- set NODE_ENV=QA   # Cambia a entorno QA
- set NODE_ENV=PROD # Cambia a entorno PROD
+ - set NODE_ENV=QA   # Cambia a entorno QA
+ - set NODE_ENV=PROD # Cambia a entorno PROD
 
 
 ## Ejecución en GitHub Actions

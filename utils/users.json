@@ -1,0 +1,10 @@
+{
+    "qa": {
+      "email": "test_qa@test.com",
+      "password": "su9CNg34HzWMbf4_"
+    },
+    "prod": {
+      "email": "test_prod@test.com",
+      "password": "ajAdq4EnK8V5wKm_"
+    }
+  }

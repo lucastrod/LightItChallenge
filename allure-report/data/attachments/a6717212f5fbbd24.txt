@@ -1,0 +1,9 @@
+{
+  status: [33m200[39m,
+  success: [33mtrue[39m,
+  data: {
+    accessToken: [32m'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3N0YWdlYXBwLmNvbXBsaWFudGNoYXRncHQuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjk3NzYwODIwLCJleHAiOjE2OTc3NjQ0MjAsIm5iZiI6MTY5Nzc2MDgyMCwianRpIjoiWEx3OHQ0blI1TzZjdzhRVSIsInN1YiI6IjMyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.R5z64ftDISf4Ft5QHAelXKmIPizxXGy3Ko8i-xK-50E'[39m,
+    tokenType: [32m'bearer'[39m,
+    expiresIn: [33m3600[39m
+  }
+}
